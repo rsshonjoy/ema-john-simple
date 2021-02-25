@@ -1,4 +1,5 @@
 import React from 'react';
+import './Product.css';
 
 const Product = (props) => {
   console.log(props.product.name);
@@ -9,7 +10,7 @@ const Product = (props) => {
         <img src={img} alt=""/>
       </div>
       <div>
-        <h4>{name}</h4>
+        <h4 className="product-name">{name}</h4>
       </div>
     </div>
   );
