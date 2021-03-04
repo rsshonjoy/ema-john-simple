@@ -13,7 +13,7 @@ const Product = (props) => {
         <img src={img} alt=""/>
       </div>
       <div className="product-info">
-        <h4 className="product-name"><Link to="/product">{name}</Link></h4>
+        <h4 className="product-name"><Link to={"/"+key}>{name}</Link></h4>
         <p><small>by: {seller}</small></p>
         <p>${price}</p>
         <p><small>Only {stock} left in stock</small></p>
