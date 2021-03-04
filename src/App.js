@@ -27,6 +27,9 @@ function App() {
           <Route path="/inventory">
             <Inventory></Inventory>
           </Route>
+          <Route path="/">
+            
+          </Route>
         </Switch>
       </Router>
     </div>
