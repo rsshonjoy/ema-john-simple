@@ -33,7 +33,7 @@ function App() {
             <ProductDetail></ProductDetail>
           </Route>
           <Route exact path="/">
-
+            <Shop></Shop>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
