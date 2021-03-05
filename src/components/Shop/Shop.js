@@ -15,10 +15,10 @@ const Shop = () => {
     const productKeys = Object.keys(saveCart);
     const previousCart = productKeys.map( existingKey => {
       const product = fakeData.find(pd => pd.key === existingKey);
-      console.log(existingKey, saveCart[existingKey]);
-      
+      product.quantity = saveCart[existingKey];
+      return product;
     })
-    console.log(saveCart);
+    console.log(previousCart);
   }, [])
 
   const handleAddProduct = (product) => {
