@@ -23,15 +23,16 @@ const Review = () => {
     
   }, []);
   return (
-    <div>
-      <h1>Cart Items: {cart.length}</h1>
-      {
-        cart.map(pd => <ReviewItem
-        key={pd.key}
-        removeProduct={removeProduct}
-        product= {pd}
-        ></ReviewItem>)
-      }
+    <div className="shop-container">
+      <div className="product-container">
+        {
+          cart.map(pd => <ReviewItem
+          key={pd.key}
+          removeProduct={removeProduct}
+          product= {pd}
+          ></ReviewItem>)
+        }
+      </div>
     </div>
   );
 };
