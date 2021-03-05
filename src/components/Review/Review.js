@@ -6,6 +6,11 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 
 const Review = () => {
   const [cart, setCart] = useState([]);
+
+  const handlePlaceOrder = () => {
+    console.log('order placed');
+    
+  }
   const removeProduct = (productKey) => {
     const newCart = cart.filter(pd => pd.key !== productKey);
     setCart(newCart);
@@ -36,7 +41,7 @@ const Review = () => {
       </div>
       <div className="cart-container">
         <Cart cart={cart}>
-          <button className="main-button">Place Order</button>
+          <button onClick={handlePlaceOrder} className="main-button">Place Order</button>
         </Cart>
       </div>
     </div>
